@@ -126,6 +126,14 @@ details.note .cue{display:block;font-size:.92em;color:var(--muted);background:va
 .ride .facts dt{color:var(--muted);white-space:nowrap}
 .ride .facts dd{margin:0}
 .script{padding:6px 14px 14px;font-size:var(--script-size);line-height:1.8}
+.script .sb{border-top:1px solid var(--line)}
+.script .sb:first-child{border-top:0}
+.script .sb summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:flex-start;text-align:left;gap:8px;padding:10px 0;font-size:15px;font-weight:700;color:var(--ink);line-height:1.4}
+.script .sb summary::-webkit-details-marker{display:none}
+.script .sb summary::before{content:'▸';color:var(--saffron);font-size:14px;transition:transform .15s}
+.script .sb[open] summary::before{transform:rotate(90deg)}
+.script .sb[open] summary{color:var(--saffron)}
+.script .sb > p:last-child{margin-bottom:14px}
 .script h4{font-size:13px;letter-spacing:.1em;color:var(--saffron);margin:16px 0 4px;font-weight:700}
 .script p{margin:0 0 10px}
 .script .dwlink{color:var(--saffron);font-weight:700}
@@ -760,12 +768,12 @@ function renderFlow(){
   document.getElementById('v-flow').innerHTML=h;
 }
 function renderRides(){
-  let h=`<div class="dayhead"><div class="eyebrow">全程 7 段搭車</div><h2>車長搭車講稿</h2><p>口語稿，可直接照唸。黃底「○」處請填入自己的資訊；灰底為給車長的動作提示，不用唸出來。</p></div>`;
+  let h=`<div class="dayhead"><div class="eyebrow">全程 7 段搭車</div><h2>車長搭車講稿</h2><p>口語稿，可直接照唸。<b>每段都先收起來，點標題才展開</b>，車長可以自己決定要講哪幾段。黃底「○」處請填入自己的資訊；灰底為給車長的動作提示，不用唸出來。</p></div>`;
   h+=`<div class="sizer">講稿字級 <button id="fs-dn" aria-label="縮小字級">A−</button><button id="fs-up" aria-label="放大字級">A＋</button></div>`;
   const n=taipeiNow();
   h+=Object.entries(RIDES).map(([id,r])=>{
     const d=DAYS.find(x=>x.id===r.day);const open=d.date===n.date;
-    return `<article class="ride" id="ride-${id}"><header><div class="when">${r.when}</div><h3>${r.title}</h3></header><dl class="facts">${r.facts.map(f=>`<dt>${f[0]}</dt><dd>${f[1]}</dd>`).join('')}</dl><details ${open?'open':''} id="det-${id}"><summary>講稿<span class="arrow">▾</span></summary><div class="script">${r.script.map(b=>`<h4>${b.h}</h4>${b.p.map(p=>`<p>${p}</p>`).join('')}`).join('')}</div></details></article>`}).join('');
+    return `<article class="ride" id="ride-${id}"><header><div class="when">${r.when}</div><h3>${r.title}</h3></header><dl class="facts">${r.facts.map(f=>`<dt>${f[0]}</dt><dd>${f[1]}</dd>`).join('')}</dl><details open id="det-${id}"><summary>講稿<span class="arrow">▾</span></summary><div class="script">${r.script.map(b=>`<details class="sb"><summary>${b.h}</summary>${b.p.map(p=>`<p>${p}</p>`).join('')}</details>`).join('')}</div></details></article>`}).join('');
   document.getElementById('v-rides').innerHTML=h;
 }
 function memberList(k){
@@ -840,7 +848,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 15:10（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 15:14（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
