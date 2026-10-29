@@ -362,7 +362,7 @@ const DAYS=[
  {t:'10:00',e:'12:00',h:'義工進駐',sub:'10:00 義工報到（福容桃園館，請穿白色上衣）・10:15 全體義工前行會議（ZOOM＋耳 Mic）・11:00 各組運作',
   edu:['拍攝義工會議及運作照片','發對講機'],
   food:['確認中餐人數','聯絡小蔬籽（送餐人數、時間、地點）','餐飲組義工共識','11:30 接便當'],
-  adm:['跟福容櫃台領郵寄資材','發義工服、車隊旗、車長手冊、名牌','11:00 布置報到台（桌牌、名單、名牌、手冊、退補、里仁位置圖）','司機小費 20,500、24 個信封袋交給交通組（嬌娥師姐）','如亨法師、沈主任桌牌、法師毛巾、小盤子、茶杯交給教育組']},
+  adm:['跟福容櫃台領郵寄資材','發義工服、車隊旗、車長手冊、名牌、車前牌（車前牌交給各車車長）','11:00 布置報到台（桌牌、名單、名牌、手冊、退補、里仁位置圖）','司機小費 20,500、24 個信封袋交給交通組（嬌娥師姐）','如亨法師、沈主任桌牌、法師毛巾、小盤子、茶杯交給教育組']},
  {t:'12:00',e:'13:30',h:'午餐／休息',food:['發便當','善後']},
  {t:'13:30',e:'15:00',h:'義工運作',
   edu:['討論及確認「請法好事多」','每日挑選照片及回饋的原則'],
@@ -850,7 +850,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 15:21（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 17:27（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
