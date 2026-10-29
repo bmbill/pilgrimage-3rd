@@ -1,5 +1,5 @@
 /* 離線快取：網頁先走網路（拿最新版），沒網路才用快取；行事曆檔一律走網路 */
-const C = 'pg-20261029150925';
+const C = 'pg-20261029151056';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(C).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
@@ -15,7 +15,8 @@ self.addEventListener('fetch', e => {
   const u = new URL(r.url);
   if (u.pathname.endsWith('.ics')) return;
   if (r.mode === 'navigate') {
-    e.respondWith(fetch(r).then(res => {
+    // 跳過瀏覽器的 10 分鐘快取，有網路就一定拿最新版
+    e.respondWith(fetch(r.url, { cache: 'no-cache', credentials: 'same-origin' }).then(res => {
       if (res.ok) { const cp = res.clone(); caches.open(C).then(c => c.put('./index.html', cp)); }
       return res;
     }).catch(() => caches.match('./index.html')));
