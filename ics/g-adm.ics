@@ -1,0 +1,529 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//yishien-3rd//pilgrimage//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:朝聖團 只看「行政組」
+X-WR-TIMEZONE:Asia/Taipei
+BEGIN:VEVENT
+UID:d0-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T020000Z
+DTEND:20261030T040000Z
+SUMMARY:義工進駐｜4 項任務
+DESCRIPTION:10:00 義工報到（福容桃園館，請穿白色上衣）・
+ 10:15 全體義工前行會議（ZOOM＋耳 Mic）・11:00 各組運作\n
+ 【行】跟福容櫃台領郵寄資材\n【行】發義工服、車隊旗
+ 、車長手冊、名牌\n【行】司機小費 20\,500、24 個信封袋
+ 交給交通組（嬌娥師姐）\n【行】如亨法師、沈主任桌牌
+ 、法師毛巾、小盤子、茶杯交給教育組\n\n隨身流程：http
+ s://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:義工進駐｜4 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d0-0-adm-2-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T030000Z
+DTEND:20261030T031500Z
+SUMMARY:【行】11:00 布置報到台（桌牌、名單、名牌、手冊
+ 、退補、里仁位置圖）
+DESCRIPTION:10:00–12:00 義工進駐\n\n隨身流程：https://bmbill.git
+ hub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】11:00 布置報到台（桌牌、名單、名牌、手
+ 冊、退補、里仁位置圖）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d0-2-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T053000Z
+DTEND:20261030T070000Z
+SUMMARY:義工運作｜3 項任務
+DESCRIPTION:【行】櫃檯領房卡、貼標籤紙，各生活班與跨區
+ 配房分開\n【行】香港學員約 14:00 到：行李放旋梯下，
+ 先引導去里仁，回來再報到\n【行】馬國 16 位學員約 21:3
+ 0 報到（退補）\n\n隨身流程：https://bmbill.github.io/pilgrimage
+ -3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:義工運作｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d0-3-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T070000Z
+DTEND:20261030T100000Z
+SUMMARY:學員報到｜6 項任務
+DESCRIPTION:【行】報到登記，詢問 11 位特殊註記學員月稱
+ 光明寺是否需接送\n【行】發名牌、房卡\n【行】團長、
+ 生活班長發車長手冊\n【行】金額退補：新退 13\,970、馬
+ 退 5\,404、港退 803；新另補 39\,900\n【行】引導前往大興
+ 里仁店路線\n【行】關顧新加坡兌換百元鈔（淑婉師姐陪
+ 同）\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:學員報到｜6 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d0-4-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T090000Z
+DTEND:20261030T100000Z
+SUMMARY:晚餐／自由運用｜3 項任務
+DESCRIPTION:【行】準備撤報到台\n【行】馬國 16 位房卡、名
+ 牌、手冊交給櫃台\n【行】月稱光明寺小車接送人數回報
+ 群組（鄭惠娃師姐）\n\n隨身流程：https://bmbill.github.io/pil
+ grimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:晚餐／自由運用｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d0-5-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T120000Z
+DTEND:20261030T130000Z
+SUMMARY:前行緣念～行政事項提醒｜3 項任務
+DESCRIPTION:ZOOM 歡迎學員、行程及行政事項提醒\n【行】群
+ 組公布明天搭車車次\n【行】提醒港、馬學員明天在月稱
+ 光明寺兌換百元鈔\n【行】明天帶布條（燕珍）\n\n隨身
+ 流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:前行緣念～行政事項提醒｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T220000Z
+DTEND:20261030T223000Z
+SUMMARY:起床｜【行】帶布條
+DESCRIPTION:【行】帶布條\n\n隨身流程：https://bmbill.github.io/p
+ ilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:起床｜【行】帶布條
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-4-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T013000Z
+DTEND:20261031T024500Z
+SUMMARY:月稱光明寺建寺緣起｜【行】關顧需接駁者（義工
+ 佛堂→華藏樓）
+DESCRIPTION:沈文良主任・＠義工佛堂\n【行】關顧需接駁者
+ （義工佛堂→華藏樓）\n\n隨身流程：https://bmbill.github.io/
+ pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:月稱光明寺建寺緣起｜【行】關顧需接駁者（義
+ 工佛堂→華藏樓）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-4-adm-1-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T020000Z
+DTEND:20261031T021500Z
+SUMMARY:【行】10:00 百元鈔兌換（張數見下方）
+DESCRIPTION:09:30–10:45 月稱光明寺建寺緣起\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】10:00 百元鈔兌換（張數見下方）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-7-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T052000Z
+DTEND:20261031T055000Z
+SUMMARY:華藏樓拍大合照｜【行】拍大合照（布條）
+DESCRIPTION:【行】拍大合照（布條）\n\n隨身流程：https://bmb
+ ill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:華藏樓拍大合照｜【行】拍大合照（布條）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-11-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T110000Z
+DTEND:20261031T120000Z
+SUMMARY:自由運用｜【行】里仁採購
+DESCRIPTION:【行】里仁採購\n\n隨身流程：https://bmbill.github.i
+ o/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:自由運用｜【行】里仁採購
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-14-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T133000Z
+DTEND:20261031T140000Z
+SUMMARY:安板｜3 項任務
+DESCRIPTION:【行】明天帶布條\n【行】聯繫飯店櫃台：明天 
+ 18:00 放 2 張 IBM 桌供文創取貨\n【行】LINE 通知：明天 18:3
+ 0（1F Lobby）文創品交貨\n\n隨身流程：https://bmbill.github.io/
+ pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:安板｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T213000Z
+DTEND:20261031T220000Z
+SUMMARY:起床｜【行】帶布條
+DESCRIPTION:【行】帶布條\n\n隨身流程：https://bmbill.github.io/p
+ ilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:起床｜【行】帶布條
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-7-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T090000Z
+DTEND:20261101T110000Z
+SUMMARY:回飯店晚餐（文創交貨）｜2 項任務
+DESCRIPTION:【行】義工 3 位協助各生活班領取訂購的文創品
+ \n【行】義工 2 位協助學員購買 IBM 桌上的文創品\n\n隨身
+ 流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:回飯店晚餐（文創交貨）｜2 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-7-adm-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T103000Z
+DTEND:20261101T104500Z
+SUMMARY:【行】18:30–19:00 文創交貨（1F Lobby）
+DESCRIPTION:17:00–19:00 回飯店晚餐（文創交貨）\n\n隨身流程
+ ：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】18:30–19:00 文創交貨（1F Lobby）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-9-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T120000Z
+DTEND:20261101T130000Z
+SUMMARY:生活班時間｜3 項任務
+DESCRIPTION:【行】生活班群組 LINE 布達：明天 7:15–7:30 櫃
+ 台生活班長還房卡\n【行】公布麻布房號、詠山館 M31 座
+ 位圖、富森用餐座位圖\n【行】提醒：一個隨身背包放杯
+ 子、筆記本、筆、雨傘、薄外套、防蚊液\n\n隨身流程：h
+ ttps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:生活班時間｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-1-adm-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T231500Z
+DTEND:20261101T233000Z
+SUMMARY:【行】7:15–7:30 櫃台跟生活班長收房卡
+DESCRIPTION:06:30–07:30 飯店早餐＆整理行李\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】7:15–7:30 櫃台跟生活班長收房卡
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-5-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T013000Z
+DTEND:20261102T040000Z
+SUMMARY:秘境.探索～心.之.旅｜【行】確認富森餐桌桌牌
+DESCRIPTION:如亨法師・詠山館\n【行】確認富森餐桌桌牌\n\n
+ 隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:秘境.探索～心.之.旅｜【行】確認富森餐桌桌牌
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-7-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T060000Z
+DTEND:20261102T083000Z
+SUMMARY:秘境.探索～心.之.旅｜3 項任務
+DESCRIPTION:【行】夏安、智斌 11/2 住山居 219，11/3 回雅舍 11
+ 9\n【行】回詠山館發房卡給生活班長（法師房卡給平福
+ 師兄）\n【行】關顧綠療老師 5 位住宿、光之勇士 2 位\n\
+ n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:秘境.探索～心.之.旅｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-7-adm-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T070000Z
+DTEND:20261102T071500Z
+SUMMARY:【行】15:00 麻布山居櫃檯領房卡、貼標籤、分房卡
+ （綠療老師 5 位房卡寄放櫃台：119 董信宏、李柏齡老師
+ （2 張卡）；121 陳淑芬等 3 位老師）
+DESCRIPTION:14:00–16:30 秘境.探索～心.之.旅\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】15:00 麻布山居櫃檯領房卡、貼標籤、分房
+ 卡（綠療老師 5 位房卡寄放櫃台：119 董信宏、李柏齡老
+ 師（2 張卡）；121 陳淑芬等 3 位老師）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-7-adm-3-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T084000Z
+DTEND:20261102T085500Z
+SUMMARY:【行】16:40 以後可以 Check in
+DESCRIPTION:14:00–16:30 秘境.探索～心.之.旅\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】16:40 以後可以 Check in
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-7-adm-5-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T084500Z
+DTEND:20261102T090000Z
+SUMMARY:【行】16:45–19:00 夜來香彩排
+DESCRIPTION:14:00–16:30 秘境.探索～心.之.旅\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【行】16:45–19:00 夜來香彩排
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-9-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T093000Z
+DTEND:20261102T103000Z
+SUMMARY:晚餐｜【行】給綠療老師 5 件義工服
+DESCRIPTION:【行】給綠療老師 5 件義工服\n\n隨身流程：https
+ ://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:晚餐｜【行】給綠療老師 5 件義工服
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d4-3-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261103T012000Z
+DTEND:20261103T040000Z
+SUMMARY:秘境.探索～心.之.旅｜2 項任務
+DESCRIPTION:【行】關顧綠療 5 位老師退房\n【行】夏安、智
+ 斌山居 219 退房，搬回雅舍 119\n\n隨身流程：https://bmbill.g
+ ithub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:秘境.探索～心.之.旅｜2 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d4-5-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261103T060000Z
+DTEND:20261103T090000Z
+SUMMARY:秘境.探索～心.之.旅｜【行】發 11/4 車次行李條：
+ 第 1 車橘・第 2 車金（桃機T1）、第 3 車粉紅（T1→T2）
+ 、第 4 車灰（福容→怡和→謙商旅）、第 5 車紅（台北
+ 兄弟飯店＋機場快線新竹高鐵）、第 6 車藍（不搭，交
+ 通自理）
+DESCRIPTION:【行】發 11/4 車次行李條：第 1 車橘・第 2 車金
+ （桃機T1）、第 3 車粉紅（T1→T2）、第 4 車灰（福容→
+ 怡和→謙商旅）、第 5 車紅（台北兄弟飯店＋機場快線
+ 新竹高鐵）、第 6 車藍（不搭，交通自理）\n\n隨身流程
+ ：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:秘境.探索～心.之.旅｜【行】發 11/4 車次行李條
+ ：第 1 車橘・第 2 車金（桃機T1）、第 3 車粉紅（T1→T2
+ ）、第 4 車灰（福容→怡和→謙商旅）、第 5 車紅（台
+ 北兄弟飯店＋機場快線新竹高鐵）、第 6 車藍（不搭，
+ 交通自理）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d4-9-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261103T140000Z
+DTEND:20261103T143000Z
+SUMMARY:安板｜4 項任務
+DESCRIPTION:【行】生活班群組公布賦歸新車次\n【行】第 6 
+ 車交通自理 32 位＋第 5 車搭機場快線到新竹高鐵 6 位：
+ 行李放藥師殿右 21 號前\n【行】先下車者行李後放\n【行
+ 】明早 9:45–10:00 麻布山居櫃台跟生活班長收房卡\n\n隨
+ 身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:安板｜4 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-0-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261103T223000Z
+DTEND:20261103T230000Z
+SUMMARY:起床＆整理行李｜【行】帶布條
+DESCRIPTION:【行】帶布條\n\n隨身流程：https://bmbill.github.io/p
+ ilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:起床＆整理行李｜【行】帶布條
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-3-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T014500Z
+DTEND:20261104T020000Z
+SUMMARY:生活班長收房卡｜【行】麻布山居櫃台跟生活班長
+ 收房卡、辦理退房
+DESCRIPTION:【行】麻布山居櫃台跟生活班長收房卡、辦理退
+ 房\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:生活班長收房卡｜【行】麻布山居櫃台跟生活班
+ 長收房卡、辦理退房
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-4-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T020000Z
+DTEND:20261104T023000Z
+SUMMARY:集合（依賦歸車次）｜【行】義工行李放賦歸的車
+ 次
+DESCRIPTION:【行】義工行李放賦歸的車次\n\n隨身流程：https
+ ://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:集合（依賦歸車次）｜【行】義工行李放賦歸的
+ 車次
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-6-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T030000Z
+DTEND:20261104T033000Z
+SUMMARY:大殿禮佛、繞佛｜【行】自理及機場快線共 38 人行
+ 李放藥師殿右 21 號前
+DESCRIPTION:【行】自理及機場快線共 38 人行李放藥師殿右 2
+ 1 號前\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:大殿禮佛、繞佛｜【行】自理及機場快線共 38 
+ 人行李放藥師殿右 21 號前
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-9-g-adm@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T070000Z
+DTEND:20261104T073000Z
+SUMMARY:賦歸｜3 項任務
+DESCRIPTION:【行】收義工服、車隊旗、車前牌、對講機\n【
+ 行】港團自訂小巴赴一心寺（李兼美）\n【行】S5 共 20 
+ 人續住福容（梁淑卿）\n\n隨身流程：https://bmbill.github.io/
+ pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:賦歸｜3 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

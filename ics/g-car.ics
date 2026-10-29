@@ -1,0 +1,393 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//yishien-3rd//pilgrimage//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:朝聖團 只看「車長」
+X-WR-TIMEZONE:Asia/Taipei
+BEGIN:VEVENT
+UID:d1-1-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T231000Z
+DTEND:20261030T232500Z
+SUMMARY:【車】07:10 車長就定位，開對講機舉旗引導上車
+DESCRIPTION:06:30–07:20 飯店早餐\n\n隨身流程：https://bmbill.git
+ hub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】07:10 車長就定位，開對講機舉旗引導上車
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-3-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261030T233000Z
+DTEND:20261031T010000Z
+SUMMARY:發車前往月稱光明寺｜【車】車長車上前行（提策
+ 朝禮、出坡、供養的殊勝；快到月稱光明寺時誦密集嘛
+ ）
+DESCRIPTION:【車】車長車上前行（提策朝禮、出坡、供養的
+ 殊勝；快到月稱光明寺時誦密集嘛）\n車長講稿：https://b
+ mbill.github.io/pilgrimage-3rd/#r1\n\n隨身流程：https://bmbill.github
+ .io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:發車前往月稱光明寺｜【車】車長車上前行（提
+ 策朝禮、出坡、供養的殊勝；快到月稱光明寺時誦密集
+ 嘛）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-4-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T013000Z
+DTEND:20261031T024500Z
+SUMMARY:月稱光明寺建寺緣起｜【車】車長舉牌，引導上洗
+ 手間、入座
+DESCRIPTION:沈文良主任・＠義工佛堂\n【車】車長舉牌，引
+ 導上洗手間、入座\n\n隨身流程：https://bmbill.github.io/pilgri
+ mage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:月稱光明寺建寺緣起｜【車】車長舉牌，引導上
+ 洗手間、入座
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-5-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T024500Z
+DTEND:20261031T034500Z
+SUMMARY:出坡｜2 項任務
+DESCRIPTION:【車】車長舉旗，配合月稱光明寺義工引導出坡
+ \n【車】掃地 11 人、其餘擦欄杆（分區見下方）\n\n隨身
+ 流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:出坡｜2 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1-10-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T090000Z
+DTEND:20261031T093000Z
+SUMMARY:結行＆賦歸（車上用晚餐）｜4 項任務
+DESCRIPTION:途經湖口休息站\n【車】車長協助發便當與車上
+ 善後\n【車】車長：湖口休息站處理掉便當盒\n【車】車
+ 長布達：明早 6:50 集合、7:00 發車\n【車】車長布達：晚
+ 上可到里仁採購\n車長講稿：https://bmbill.github.io/pilgrimage-
+ 3rd/#r2\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:結行＆賦歸（車上用晚餐）｜4 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-1-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T224000Z
+DTEND:20261031T225500Z
+SUMMARY:【車】06:40 車長就定位，開對講機舉牌引導上車
+DESCRIPTION:06:00–06:50 飯店早餐\n\n隨身流程：https://bmbill.git
+ hub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】06:40 車長就定位，開對講機舉牌引導上車
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-3-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261031T230000Z
+DTEND:20261031T235000Z
+SUMMARY:發車往林口體育館・車上前行｜【車】車長車上前
+ 行：唱傑仁波切、誦密集嘛
+DESCRIPTION:【車】車長車上前行：唱傑仁波切、誦密集嘛\n
+ 車長講稿：https://bmbill.github.io/pilgrimage-3rd/#r3\n\n隨身流程
+ ：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:發車往林口體育館・車上前行｜【車】車長車上
+ 前行：唱傑仁波切、誦密集嘛
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-4-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T000000Z
+DTEND:20261101T040000Z
+SUMMARY:憶師恩法會 上午場｜【車】車長舉旗，配合法會義
+ 工引導入座
+DESCRIPTION:【車】車長舉旗，配合法會義工引導入座\n\n隨
+ 身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:憶師恩法會 上午場｜【車】車長舉旗，配合法
+ 會義工引導入座
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-6-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T050000Z
+DTEND:20261101T090000Z
+SUMMARY:憶師恩法會 下午場｜【車】車長回程在車上布達四
+ 件事（見搭車講稿）
+DESCRIPTION:【車】車長回程在車上布達四件事（見搭車講稿
+ ）\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:憶師恩法會 下午場｜【車】車長回程在車上布
+ 達四件事（見搭車講稿）
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-6-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T090000Z
+DTEND:20261101T091500Z
+SUMMARY:【車】17:00 車長開對講機，舉旗引導上車
+DESCRIPTION:13:00–17:00 憶師恩法會 下午場\n\n隨身流程：https
+ ://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】17:00 車長開對講機，舉旗引導上車
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d2-7-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T090000Z
+DTEND:20261101T110000Z
+SUMMARY:回飯店晚餐（文創交貨）｜【車】車長回程車上布
+ 達：文創交貨、明早行李、還房卡、隨身背包
+DESCRIPTION:【車】車長回程車上布達：文創交貨、明早行李
+ 、還房卡、隨身背包\n車長講稿：https://bmbill.github.io/pilgr
+ image-3rd/#r4\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:回飯店晚餐（文創交貨）｜【車】車長回程車上
+ 布達：文創交貨、明早行李、還房卡、隨身背包
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-2-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261101T232000Z
+DTEND:20261101T233500Z
+SUMMARY:【車】7:20 車長就定位
+DESCRIPTION:07:20–07:40 集合・上行李\n\n隨身流程：https://bmbi
+ ll.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】7:20 車長就定位
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-4-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T000000Z
+DTEND:20261102T011000Z
+SUMMARY:車上前行（往麻布山林）｜【車】車長車上前行
+DESCRIPTION:【車】車長車上前行\n車長講稿：https://bmbill.gith
+ ub.io/pilgrimage-3rd/#r5\n\n隨身流程：https://bmbill.github.io/pilgri
+ mage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:車上前行（往麻布山林）｜【車】車長車上前行
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3-6-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T040000Z
+DTEND:20261102T054500Z
+SUMMARY:用餐、休息｜【車】車長舉旗引導至餐廳用餐
+DESCRIPTION:【車】車長舉旗引導至餐廳用餐\n\n隨身流程：ht
+ tps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:用餐、休息｜【車】車長舉旗引導至餐廳用餐
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d4-1-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T223000Z
+DTEND:20261103T000000Z
+SUMMARY:綠色療癒課程｜【車】分二組舉牌（A 步道組、B 平
+ 地組），配合綠療老師引導
+DESCRIPTION:【車】分二組舉牌（A 步道組、B 平地組），配
+ 合綠療老師引導\n\n隨身流程：https://bmbill.github.io/pilgrimag
+ e-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:綠色療癒課程｜【車】分二組舉牌（A 步道組、B
+  平地組），配合綠療老師引導
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d4-4-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261103T040000Z
+DTEND:20261103T054500Z
+SUMMARY:用餐、休息｜【車】車長舉旗引導至餐廳用餐
+DESCRIPTION:【車】車長舉旗引導至餐廳用餐\n\n隨身流程：ht
+ tps://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:用餐、休息｜【車】車長舉旗引導至餐廳用餐
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-2-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T015000Z
+DTEND:20261104T020500Z
+SUMMARY:【車】9:50 車長就定位
+DESCRIPTION:08:20–10:00 自由活動\n\n隨身流程：https://bmbill.git
+ hub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】9:50 車長就定位
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-4-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T020000Z
+DTEND:20261104T023000Z
+SUMMARY:集合（依賦歸車次）｜【車】學員依賦歸車次集合
+ ，車長點名，開對講機舉旗引導上車
+DESCRIPTION:【車】學員依賦歸車次集合，車長點名，開對講
+ 機舉旗引導上車\n\n隨身流程：https://bmbill.github.io/pilgrimag
+ e-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:集合（依賦歸車次）｜【車】學員依賦歸車次集
+ 合，車長點名，開對講機舉旗引導上車
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-5-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T021000Z
+DTEND:20261104T030000Z
+SUMMARY:發車往鳳山寺｜2 項任務
+DESCRIPTION:【車】車長車上前行（提醒鳳山寺輕聲細語）\n
+ 【車】提醒下午導覽依「原車次」分 6 組\n車長講稿：htt
+ ps://bmbill.github.io/pilgrimage-3rd/#r6\n\n隨身流程：https://bmbill.
+ github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:發車往鳳山寺｜2 項任務
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-6-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T030000Z
+DTEND:20261104T033000Z
+SUMMARY:大殿禮佛、繞佛｜【車】車長舉旗引導至大殿禮佛
+ 、繞佛
+DESCRIPTION:【車】車長舉旗引導至大殿禮佛、繞佛\n\n隨身
+ 流程：https://bmbill.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:大殿禮佛、繞佛｜【車】車長舉旗引導至大殿禮
+ 佛、繞佛
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-8-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T053000Z
+DTEND:20261104T063000Z
+SUMMARY:鳳山寺導覽（依原車次分 6 組）｜【車】車長舉旗
+ 配合鳳山寺義工導覽，結束回學戒堂領綠豆椪
+DESCRIPTION:【車】車長舉旗配合鳳山寺義工導覽，結束回學
+ 戒堂領綠豆椪\n\n隨身流程：https://bmbill.github.io/pilgrimage-3
+ rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:鳳山寺導覽（依原車次分 6 組）｜【車】車長舉
+ 旗配合鳳山寺義工導覽，結束回學戒堂領綠豆椪
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-9-car-0-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T065000Z
+DTEND:20261104T070500Z
+SUMMARY:【車】14:50 舉旗引導上車；完畢後收車前牌，連同
+ 車隊旗、義工服交回行政組
+DESCRIPTION:15:00 賦歸\n\n隨身流程：https://bmbill.github.io/pilgrim
+ age-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:【車】14:50 舉旗引導上車；完畢後收車前牌，連
+ 同車隊旗、義工服交回行政組
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5-9-g-car@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T070000Z
+DTEND:20261104T073000Z
+SUMMARY:賦歸｜【車】車長坐回自己的賦歸車次
+DESCRIPTION:【車】車長坐回自己的賦歸車次\n車長講稿：http
+ s://bmbill.github.io/pilgrimage-3rd/#r7\n\n隨身流程：https://bmbill.g
+ ithub.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:賦歸｜【車】車長坐回自己的賦歸車次
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
