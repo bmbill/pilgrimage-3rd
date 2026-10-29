@@ -143,6 +143,7 @@ details.note .cue{display:block;font-size:.92em;color:var(--muted);background:va
 .ride details>summary::-webkit-details-marker{display:none}
 .ride details[open]>summary .arrow{transform:rotate(180deg)}
 .sizer{display:flex;align-items:center;gap:8px;justify-content:flex-end;padding-block:10px 0;font-size:13px;color:var(--muted)}
+.sizer .sball{width:auto;padding:0 12px;color:var(--saffron);border-color:var(--saffron)}
 .sizer button{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:40px;height:34px;cursor:pointer;font-weight:700}
 
 /* free matrix */
@@ -769,7 +770,7 @@ function renderFlow(){
 }
 function renderRides(){
   let h=`<div class="dayhead"><div class="eyebrow">全程 7 段搭車</div><h2>車長搭車講稿</h2><p>口語稿，可直接照唸。<b>每段都先收起來，點標題才展開</b>，車長可以自己決定要講哪幾段。黃底「○」處請填入自己的資訊；灰底為給車長的動作提示，不用唸出來。</p></div>`;
-  h+=`<div class="sizer">講稿字級 <button id="fs-dn" aria-label="縮小字級">A−</button><button id="fs-up" aria-label="放大字級">A＋</button></div>`;
+  h+=`<div class="sizer"><button id="sb-all" class="sball">全部展開</button><span style="flex:1"></span>講稿字級 <button id="fs-dn" aria-label="縮小字級">A−</button><button id="fs-up" aria-label="放大字級">A＋</button></div>`;
   const n=taipeiNow();
   h+=Object.entries(RIDES).map(([id,r])=>{
     const d=DAYS.find(x=>x.id===r.day);const open=d.date===n.date;
@@ -848,7 +849,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 15:14（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/29 15:16（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
@@ -902,6 +903,7 @@ function tick(){const n=taipeiNow();document.getElementById('clock').textContent
 
 function jumpTo(id){const t=document.getElementById(id);if(!t)return;t.scrollIntoView({block:'start'});window.scrollBy(0,-document.querySelector('.top').offsetHeight-8)}
 const ownGroup=p=>p.id==='chief'?'all':p.groups.includes('car')&&p.groups.length===1?'car':p.groups.find(k=>k!=='car')||'all';
+document.addEventListener('toggle',e=>{if(!e.target.classList||!e.target.classList.contains('sb'))return;const b=document.getElementById('sb-all');if(b)b.textContent=[...document.querySelectorAll('#v-rides .sb')].every(x=>x.open)?'全部收起':'全部展開'},true);
 document.addEventListener('change',e=>{
   if(e.target.id==='me-sel'){S.me=e.target.value}else if(e.target.id==='me-all'){S.all=e.target.checked}else return;
   const p=PEOPLE.find(x=>x.id===S.me);if(p)S.group=S.all&&!p.generic?'all':ownGroup(p);
@@ -925,6 +927,7 @@ document.addEventListener('click',e=>{
   const g=e.target.closest('[data-group]');if(g){S.group=g.dataset.group;try{localStorage.setItem('pg-group',S.group)}catch(_){};render();return}
   const t=e.target.closest('[data-view]');if(t){S.view=t.dataset.view;render();window.scrollTo({top:0});return}
   const r=e.target.closest('[data-ride]');if(r){S.view='rides';render();const det=document.getElementById('det-'+r.dataset.ride);det.open=true;document.getElementById('ride-'+r.dataset.ride).scrollIntoView({block:'start'});window.scrollBy(0,-document.querySelector('.top').offsetHeight-8);return}
+  if(e.target.id==='sb-all'){const all=[...document.querySelectorAll('#v-rides .sb')];const open=!all.every(x=>x.open);all.forEach(x=>x.open=open);e.target.textContent=open?'全部收起':'全部展開';return}
   if(e.target.id==='fs-up'||e.target.id==='fs-dn'){let v=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--script-size'))||18;v=Math.max(14,Math.min(28,v+(e.target.id==='fs-up'?2:-2)));document.documentElement.style.setProperty('--script-size',v+'px');try{localStorage.setItem('pg-fs',v)}catch(_){}}
 });
 
