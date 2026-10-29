@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1B3558">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="朝聖團流程">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>憶師恩朝聖團 3rd 隨身流程</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -687,6 +694,13 @@ function toICS(p){
   L.push('END:VCALENDAR');return L.map(icsFold).join('\r\n')+'\r\n';
 }
 
+/* ===== PWA ===== */
+const INSTALL={ev:null};
+if(typeof window!=='undefined'){ // gen_ics.js 在 node 執行時略過
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();INSTALL.ev=e;if(S.view==='info')renderInfo()});
+if('serviceWorker' in navigator&&location.protocol==='https:')window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+}
+
 /* ===== state ===== */
 const S={view:'flow',day:'d0',group:'all',carmode:'reg',me:'',all:false};
 try{S.me=localStorage.getItem('pg-me')||'';S.all=localStorage.getItem('pg-all')==='1';const g=localStorage.getItem('pg-group');if(g)S.group=g;const fs=localStorage.getItem('pg-fs');if(fs)document.documentElement.style.setProperty('--script-size',fs+'px')}catch(e){}
@@ -792,7 +806,10 @@ function renderFree(){
 function renderInfo(){
   const mode=CARMODES.find(m=>m.id===S.carmode);
   let h=`<div class="dayhead"><div class="eyebrow">隨身資訊</div><h2>各車、座位、布達與聯絡</h2></div>`;
-  h+=`<nav class="jump">${[['i-me','我的提醒'],['i-car','各車與生活班長'],['i-seat','座位・區域圖'],['i-line','LINE 布達'],['i-place','地點'],['i-sos','緊急處理']].map(([id,l])=>`<a href="#${id}" data-jump="${id}">${l}</a>`).join('')}</nav>`;
+  h+=`<nav class="jump">${[['i-app','裝到桌面'],['i-me','我的提醒'],['i-car','各車與生活班長'],['i-seat','座位・區域圖'],['i-line','LINE 布達'],['i-place','地點'],['i-sos','緊急處理']].map(([id,l])=>`<a href="#${id}" data-jump="${id}">${l}</a>`).join('')}</nav>`;
+  // 裝到手機桌面（PWA）
+  const standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+  if(!standalone&&location.protocol==='https:')h+=`<section class="isec" id="i-app"><h3>裝到手機桌面</h3><p class="hint">裝好後桌面會多一個「朝聖團流程」圖示，點開就是全螢幕；<b>山上沒訊號也打得開</b>（會顯示最後一次連網時的版本）。</p><div class="mebox">${INSTALL.ev?`<button class="calbtn" id="app-install" style="width:100%;border:0;cursor:pointer">安裝到桌面</button>`:''}<ol><li><b>iPhone</b>：用 Safari 打開 → 下方「分享」按鈕 □↑ → 往下找「加入主畫面」→「加入」。</li><li><b>Android</b>：用 Chrome 打開 → 右上「⋮」→「安裝應用程式」或「加到主畫面」。</li><li>在 LINE 裡打開時不能安裝，請先點右上「⋯」→「用預設瀏覽器開啟」。</li></ol></div></section>`;
   // 我的行事曆提醒
   const me=PEOPLE.find(x=>x.id===S.me);
   h+=`<section class="isec" id="i-me"><h3>我的行事曆提醒</h3><p class="hint">選自己的名字，把自己的任務加到手機行事曆。每項任務前 ${REMIND_MIN} 分鐘，手機會跳通知（鎖定畫面也看得到）。</p><div class="mebox"><select id="me-sel" aria-label="選擇自己"><option value="">— 請選自己的名字 —</option>${PEOPLE.filter(x=>!x.allOf).map(x=>`<option value="${x.id}"${x.id===S.me?' selected':''}>${x.generic?x.name:x.name+'（'+x.lab+'）'}</option>`).join('')}</select>`;
@@ -881,6 +898,7 @@ document.addEventListener('click',e=>{
   if(e.target.id==='ov-close'||e.target.classList.contains('ov-body')){document.getElementById('overlay').hidden=true;return}
   if(e.target.id==='ov-zoom'){const im=document.querySelector('#overlay img');im.classList.toggle('big');e.target.textContent=im.classList.contains('big')?'縮小':'放大';return}
   const seat=e.target.closest('[data-seat]');if(seat){openSeat(seat.dataset.seat);return}
+  if(e.target.id==='app-install'&&INSTALL.ev){INSTALL.ev.prompt();INSTALL.ev.userChoice.finally(()=>{INSTALL.ev=null;renderInfo()});return}
   const ic=e.target.closest('[data-ics]');if(ic&&!location.protocol.startsWith('http')){e.preventDefault();const p=PEOPLE.find(x=>x.id===ic.dataset.ics);const u=URL.createObjectURL(new Blob([toICS(p)],{type:'text/calendar'}));const a=document.createElement('a');a.href=u;a.download=`朝聖團_${p.name}.ics`;a.click();return}
   const cp=e.target.closest('[data-copy]');if(cp){copyLine(cp.dataset.copy);return}
   const cm=e.target.closest('[data-carmode]');if(cm){S.carmode=cm.dataset.carmode;renderInfo();return}
@@ -899,10 +917,10 @@ document.addEventListener('click',e=>{
   const n=taipeiNow();const today=DAYS.find(d=>d.date===n.date);
   if(today)S.day=today.id;else if(n.date>DAYS[DAYS.length-1].date)S.day=DAYS[DAYS.length-1].id;
   const hs=location.hash.slice(1);
-  if(/^d[0-5]$/.test(hs))S.day=hs;else if(hs==='rides'||hs==='free'||hs==='info')S.view=hs;else if(hs==='me'){S.view='info'}else if(/^r[1-7]$/.test(hs)){S.view='rides'}
+  if(/^d[0-5]$/.test(hs))S.day=hs;else if(hs==='rides'||hs==='free'||hs==='info')S.view=hs;else if(hs==='me'||hs==='app'){S.view='info'}else if(/^r[1-7]$/.test(hs)){S.view='rides'}
   tick();render();setInterval(()=>{tick();renderStatus();const d=DAYS.find(x=>x.id===S.day);if(S.view!=='rides'&&d.date===taipeiNow().date&&!document.querySelector('details.note[open]'))render()},60000);
   if(today&&S.view==='flow'){const el=document.querySelector('.slot.now');if(el)setTimeout(()=>{el.scrollIntoView({block:'center'})},50)}
-  if(hs==='me')setTimeout(()=>jumpTo('i-me'),50);
+  if(hs==='me'||hs==='app')setTimeout(()=>jumpTo('i-'+hs),50);
   if(/^r[1-7]$/.test(hs)){const det=document.getElementById('det-'+hs);if(det){det.open=true;document.getElementById('ride-'+hs).scrollIntoView()}}
 })();
 </script>
