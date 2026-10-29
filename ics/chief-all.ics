@@ -352,8 +352,9 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261031T034500Z
 DTEND:20261031T051500Z
 SUMMARY:午餐及休息｜3 項任務
-DESCRIPTION:★【餐】發便當\n★【餐】善後\n★【交】送司
- 機便當 ×6\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+DESCRIPTION:＠義工佛堂\n★【餐】發便當\n★【餐】善後\n★
+ 【交】送司機便當 ×6\n\n隨身流程：https://bmbill.github.io/pi
+ lgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
