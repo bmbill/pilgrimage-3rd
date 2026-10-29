@@ -46,10 +46,11 @@
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;-webkit-text-size-adjust:100%}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
-.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
 
 /* header */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--navy-ink);box-shadow:0 1px 0 rgba(0,0,0,.15)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--navy-ink);box-shadow:0 1px 0 rgba(0,0,0,.15);transition:transform .25s ease}
+.top.hide{transform:translateY(calc(-100% - env(safe-area-inset-top,0px)))}
 .top .wrap{padding-block:10px 0}
 .brand{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 .brand h1{font-family:var(--f-display);font-size:18px;margin:0;letter-spacing:.04em;text-wrap:balance}
@@ -85,9 +86,9 @@ main{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 
 /* timeline */
 .tl{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
-.slot{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px}
-.slot .time{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;line-height:1.25;padding-top:12px;text-align:right;color:var(--ink)}
-.slot .time small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.slot{display:grid;grid-template-columns:44px minmax(0,1fr);gap:6px}
+.slot .time{font-variant-numeric:tabular-nums;font-weight:700;font-size:13px;letter-spacing:-.02em;line-height:1.25;padding-top:12px;text-align:right;color:var(--ink)}
+.slot .time small{display:block;font-weight:400;color:var(--muted);font-size:11px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
 .slot.now .card{border-color:var(--now);box-shadow:0 0 0 2px var(--now)}
 .slot.now .time{color:var(--now)}
@@ -752,7 +753,6 @@ function renderFlow(){
   h+='<ol class="tl">'+d.slots.map((s,i)=>{
     let cls='slot';if(ni.state==='today'){if(i===ni.i)cls+=' now';else if(slotEnd(d,i)<=ni.min)cls+=' past'}else if(ni.state==='past')cls+='';
     return `<li class="${cls}" id="slot-${d.id}-${i}"><div class="time">${s.t}${s.e?`<small>–${s.e}</small>`:''}</div><div class="card"><h3>${i===ni.i?'<span class="nowtag">現在</span>':''}${s.h}</h3>${s.sub?`<div class="sub">${s.sub}</div>`:''}${taskBlock(s)}${s.ride?`<button class="ridebtn" data-ride="${s.ride}">${BUS}<span>車長講稿：${RIDES[s.ride].title}</span></button>`:''}${s.seat?`<button class="seatbtn" data-seat="${s.seat}">看${seatLabel(s.seat)}：${IMGS[s.seat].t}</button>`:''}${s.note?`<details class="note"><summary>${s.note.sum}</summary>${s.note.html}</details>`:''}</div></li>`}).join('')+'</ol>';
-  h+=`<div class="foot">資料來源：FINAL 車長手冊 1029R3 正行流程。「車」＝車長職務（12 位車長由各組義工打散擔任，每車 2–3 位）。各車：${CARS.map(c=>`第${c.n}車 ${c.lead}（${c.cls}）`).join('；')}。</div>`;
   document.getElementById('v-flow').innerHTML=h;
 }
 function renderRides(){
@@ -893,6 +893,7 @@ document.addEventListener('change',e=>{
   if(e.target.id==='me-sel'){S.me=e.target.value}else if(e.target.id==='me-all'){S.all=e.target.checked}else return;
   const p=PEOPLE.find(x=>x.id===S.me);if(p)S.group=S.all&&!p.generic?'all':ownGroup(p);
   try{localStorage.setItem('pg-me',S.me);localStorage.setItem('pg-all',S.all?'1':'0');localStorage.setItem('pg-group',S.group)}catch(_){};renderInfo();renderGroups()});
+(function(){let last=scrollY;const top=document.querySelector('.top');addEventListener('scroll',()=>{const y=scrollY;if(y>last+6&&y>top.offsetHeight)top.classList.add('hide');else if(y<last-6||y<=0)top.classList.remove('hide');last=y},{passive:true})})();
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('overlay').hidden=true});
 document.addEventListener('click',e=>{
   if(e.target.id==='ov-close'||e.target.classList.contains('ov-body')){document.getElementById('overlay').hidden=true;return}
