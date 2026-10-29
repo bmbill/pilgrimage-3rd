@@ -335,8 +335,9 @@ DTSTART:20261031T024500Z
 DTEND:20261031T034500Z
 SUMMARY:出坡｜2 項任務
 DESCRIPTION:★【車】車長舉旗，配合月稱光明寺義工引導出
- 坡\n★【車】掃地 11 人、其餘擦欄杆（分區見下方）\n\n
- 隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+ 坡\n★【車】掃地 11 人（廣場、山門）、其餘擦欄杆（
+ 分區見下方）\n\n隨身流程：https://bmbill.github.io/pilgrimage-3
+ rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -749,12 +750,13 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261101T120000Z
 DTEND:20261101T130000Z
 SUMMARY:生活班時間｜5 項任務
-DESCRIPTION:★【行】生活班群組 LINE 布達：明天 7:15–7:30 
- 櫃台生活班長還房卡\n★【行】公布麻布房號、詠山館 M3
- 1 座位圖、富森用餐座位圖\n★【行】提醒：一個隨身背
- 包放杯子、筆記本、筆、雨傘、薄外套、防蚊液\n【教】
- 發布前一天的請法好事多\n【餐】確認明日用餐人數\n\n
- 隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+DESCRIPTION:各生活班分享憶師恩法會的受用\n★【行】生活
+ 班群組 LINE 布達：明天 7:15–7:30 櫃台生活班長還房卡\n
+ ★【行】公布麻布房號、詠山館 M31 座位圖、富森用餐座
+ 位圖\n★【行】提醒：一個隨身背包放杯子、筆記本、筆
+ 、雨傘、薄外套、防蚊液\n【教】發布前一天的請法好事
+ 多\n【餐】確認明日用餐人數\n\n隨身流程：https://bmbill.gi
+ thub.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY

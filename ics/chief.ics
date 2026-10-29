@@ -678,12 +678,13 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261101T120000Z
 DTEND:20261101T130000Z
 SUMMARY:生活班時間｜5 項任務
-DESCRIPTION:【教】發布前一天的請法好事多\n【餐】確認明
- 日用餐人數\n【行】生活班群組 LINE 布達：明天 7:15–7:30
-  櫃台生活班長還房卡\n【行】公布麻布房號、詠山館 M31 
- 座位圖、富森用餐座位圖\n【行】提醒：一個隨身背包放
- 杯子、筆記本、筆、雨傘、薄外套、防蚊液\n\n隨身流程
- ：https://bmbill.github.io/pilgrimage-3rd/
+DESCRIPTION:各生活班分享憶師恩法會的受用\n【教】發布前
+ 一天的請法好事多\n【餐】確認明日用餐人數\n【行】生
+ 活班群組 LINE 布達：明天 7:15–7:30 櫃台生活班長還房卡\
+ n【行】公布麻布房號、詠山館 M31 座位圖、富森用餐座
+ 位圖\n【行】提醒：一個隨身背包放杯子、筆記本、筆、
+ 雨傘、薄外套、防蚊液\n\n隨身流程：https://bmbill.github.io/
+ pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
