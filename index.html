@@ -92,6 +92,8 @@ main{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
 .slot.now .card{border-color:var(--now);box-shadow:0 0 0 2px var(--now)}
 .slot.now .time{color:var(--now)}
+.slot.next .card{border-color:var(--now)}
+.nowtag.nx{background:none;color:var(--now);box-shadow:inset 0 0 0 1px var(--now)}
 .nowtag{display:inline-block;background:var(--now);color:var(--surface);font-size:11px;font-weight:700;border-radius:4px;padding:0 6px;margin-right:6px;vertical-align:2px}
 .slot.past .card{opacity:.6}
 .card h3{margin:0;font-size:16px;line-height:1.4;font-weight:700}
@@ -767,8 +769,9 @@ function renderFlow(){
   h+='</div>';
   if(rides.length)h+=`<div class="ridesum">${d.slots.filter(s=>s.ride).map(s=>`<button class="ridepill" data-ride="${s.ride}">${BUS}<div><b>${s.t}${s.e?'–'+s.e:''} 搭車</b><span>${RIDES[s.ride].title}</span></div></button>`).join('')}</div>`;
   h+='<ol class="tl">'+d.slots.map((s,i)=>{
-    let cls='slot';if(ni.state==='today'){if(i===ni.i)cls+=' now';else if(slotEnd(d,i)<=ni.min)cls+=' past'}else if(ni.state==='past')cls+='';
-    return `<li class="${cls}" id="slot-${d.id}-${i}"><div class="time">${s.t}${s.e?`<small>–${s.e}</small>`:''}</div><div class="card"><h3>${i===ni.i?'<span class="nowtag">現在</span>':''}${s.h}</h3>${s.sub?`<div class="sub">${s.sub}</div>`:''}${taskBlock(s)}${s.ride?`<button class="ridebtn" data-ride="${s.ride}">${BUS}<span>車長講稿：${RIDES[s.ride].title}</span></button>`:''}${s.seat?`<button class="seatbtn" data-seat="${s.seat}">看${seatLabel(s.seat)}：${IMGS[s.seat].t}</button>`:''}${s.note?`<details class="note"><summary>${s.note.sum}</summary>${s.note.html}</details>`:''}</div></li>`}).join('')+'</ol>';
+    const nx=ni.state==='today'&&ni.i<0?d.slots.findIndex(x=>toMin(x.t)>ni.min):-1;
+    let cls='slot';if(ni.state==='today'){if(i===ni.i)cls+=' now';else if(i===nx)cls+=' next';else if(slotEnd(d,i)<=ni.min)cls+=' past'}else if(ni.state==='past')cls+='';
+    return `<li class="${cls}" id="slot-${d.id}-${i}"><div class="time">${s.t}${s.e?`<small>–${s.e}</small>`:''}</div><div class="card"><h3>${i===ni.i?'<span class="nowtag">現在</span>':cls.includes(' next')?'<span class="nowtag nx">下一個</span>':''}${s.h}</h3>${s.sub?`<div class="sub">${s.sub}</div>`:''}${taskBlock(s)}${s.ride?`<button class="ridebtn" data-ride="${s.ride}">${BUS}<span>車長講稿：${RIDES[s.ride].title}</span></button>`:''}${s.seat?`<button class="seatbtn" data-seat="${s.seat}">看${seatLabel(s.seat)}：${IMGS[s.seat].t}</button>`:''}${s.note?`<details class="note"><summary>${s.note.sum}</summary>${s.note.html}</details>`:''}</div></li>`}).join('')+'</ol>';
   document.getElementById('v-flow').innerHTML=h;
 }
 function renderRides(){
@@ -852,7 +855,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 17:30（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 18:18（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
@@ -940,7 +943,11 @@ document.addEventListener('click',e=>{
   const hs=location.hash.slice(1);
   if(/^d[0-5]$/.test(hs))S.day=hs;else if(hs==='rides'||hs==='free'||hs==='info')S.view=hs;else if(hs==='me'||hs==='app'){S.view='info'}else if(/^r[1-7]$/.test(hs)){S.view='rides'}
   tick();render();setInterval(()=>{tick();renderStatus();const d=DAYS.find(x=>x.id===S.day);if(S.view!=='rides'&&d.date===taipeiNow().date&&!document.querySelector('details.note[open]'))render()},60000);
-  if(today&&S.view==='flow'){const el=document.querySelector('.slot.now');if(el)setTimeout(()=>{el.scrollIntoView({block:'center'})},50)}
+  try{history.scrollRestoration='manual'}catch(_){}
+  const goNow=()=>{const el=document.querySelector('#v-flow .slot.now')||document.querySelector('#v-flow .slot.next')||[...document.querySelectorAll('#v-flow .slot.past')].pop();if(el)el.scrollIntoView({block:'center'})};
+  if(today&&S.view==='flow')setTimeout(goNow,50);
+  // 從背景切回來（例如手機鎖屏後再打開）超過 10 分鐘，自動跳回今天、目前的行程
+  let hiddenAt=0;document.addEventListener('visibilitychange',()=>{if(document.hidden){hiddenAt=Date.now();return}if(hiddenAt&&Date.now()-hiddenAt>10*60e3){const t=DAYS.find(x=>x.date===taipeiNow().date);if(t){S.view='flow';S.day=t.id;render();setTimeout(goNow,50)}}});
   if(hs==='me'||hs==='app')setTimeout(()=>jumpTo('i-'+hs),50);
   if(/^r[1-7]$/.test(hs)){const det=document.getElementById('det-'+hs);if(det){det.open=true;document.getElementById('ride-'+hs).scrollIntoView()}}
 })();
