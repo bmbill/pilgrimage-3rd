@@ -636,7 +636,9 @@ const LINEMSG={
 　07:20　第 4–6 車
 💴 香港、馬來西亞師兄師姐：明天 09:20 在月稱光明寺將錢交給行政組，統一兌換百元鈔
 🎒 水杯、薄外套、雨傘；上午有出坡，請穿方便活動的衣褲
-🍱 晚餐在回程車上用便當
+🪪 名牌請務必隨身佩戴
+🍱 晚餐在回程車上用便當（請帶環保餐具）
+🚐 月稱光明寺登記接駁的同學，請配合現場義工的引導，依序搭車，感謝大家的配合！
 晚安，明天見 🙏`,
  d1:`【11/1（日）明日提醒｜憶師恩法會】
 ⏰ 05:30 起床
@@ -855,7 +857,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 18:41（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 21:01（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
