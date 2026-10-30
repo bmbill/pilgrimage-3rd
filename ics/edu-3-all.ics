@@ -172,12 +172,12 @@ DTEND:20261030T130000Z
 SUMMARY:前行緣念～行政事項提醒｜8 項任務
 DESCRIPTION:ZOOM 歡迎學員、行程及行政事項提醒\n★【教】
  播放真如老師歡喜建寺前行影片\n【餐】明日用餐方式說
- 明\n【餐】確認明日用餐人數\n【交】佈達明早 7:20 大廳
- 集合、7:30 發車（每次兩輛，間隔 5 分鐘）\n【交】上車
- 再點名，發車由車長回報\n【行】群組公布明天搭車車次
- \n【行】提醒港、馬學員明天在月稱光明寺兌換百元鈔\n
- 【行】明天帶布條（燕珍）\n\n隨身流程：https://bmbill.gith
- ub.io/pilgrimage-3rd/
+ 明\n【餐】確認明日用餐人數\n【交】佈達明早依車次大
+ 廳集合：7:15 第 1–3 車、7:20 第 4–6 車\n【交】上車再點
+ 名，發車由車長回報\n【行】群組公布明天搭車車次\n【
+ 行】提醒港、馬學員明天在月稱光明寺兌換百元鈔\n【行
+ 】明天帶布條（燕珍）\n\n隨身流程：https://bmbill.github.io/
+ pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -248,52 +248,54 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:d1-2-edu-3-all@yishien-3rd
+UID:d1-2-tra-0-edu-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
-DTSTART:20261030T232000Z
-DTEND:20261030T235000Z
-SUMMARY:大廳集合｜2 項任務
-DESCRIPTION:【交】學員 7:20 大廳集合\n【交】遊覽車 7:25 到
- 飯店\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+DTSTART:20261030T231500Z
+DTEND:20261030T233000Z
+SUMMARY:【交】07:15 第 1–3 車大廳集合，遊覽車 07:25 到
+DESCRIPTION:07:15 大廳集合（依車次）\n\n隨身流程：https://bmb
+ ill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:大廳集合｜2 項任務
+DESCRIPTION:【交】07:15 第 1–3 車大廳集合，遊覽車 07:25 到
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:d1-3-tra-0-edu-3-all@yishien-3rd
+UID:d1-2-tra-1-edu-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
-DTSTART:20261030T233000Z
-DTEND:20261030T234500Z
-SUMMARY:【交】7:30 起分批發車，每次兩輛，間隔 5 分鐘
-DESCRIPTION:07:30–09:00 發車前往月稱光明寺\n\n隨身流程：htt
- ps://bmbill.github.io/pilgrimage-3rd/
+DTSTART:20261030T232000Z
+DTEND:20261030T233500Z
+SUMMARY:【交】07:20 第 4–6 車大廳集合，遊覽車 07:30 到
+DESCRIPTION:07:15 大廳集合（依車次）\n\n隨身流程：https://bmb
+ ill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:【交】7:30 起分批發車，每次兩輛，間隔 5 分鐘
+DESCRIPTION:【交】07:20 第 4–6 車大廳集合，遊覽車 07:30 到
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d1-3-edu-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
-DTSTART:20261030T233000Z
+DTSTART:20261030T232500Z
 DTEND:20261031T010000Z
-SUMMARY:發車前往月稱光明寺｜5 項任務
+SUMMARY:發車前往月稱光明寺｜6 項任務
 DESCRIPTION:★【車】車長車上前行（提策朝禮、出坡、供養
  的殊勝；快到月稱光明寺時誦密集嘛）\n★【車】車長宣
  達：名牌務必隨身佩戴（法會入場證、所有活動識別證
  ）\n【餐】確認午餐人數（分正常、量少）\n【餐】聯絡
- 金杏師姐（送餐人數、時間、地點）\n【交】上車再點名
- ，發車由車長回報\n車長講稿：https://bmbill.github.io/pilgrima
- ge-3rd/#r1\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+ 金杏師姐（送餐人數、時間、地點）\n【交】第 1–3 車 0
+ 7:25、第 4–6 車 07:30 遊覽車到，上車後發車\n【交】上車
+ 再點名，發車由車長回報\n車長講稿：https://bmbill.github.io
+ /pilgrimage-3rd/#r1\n\n隨身流程：https://bmbill.github.io/pilgrimage-
+ 3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:發車前往月稱光明寺｜5 項任務
+DESCRIPTION:發車前往月稱光明寺｜6 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
