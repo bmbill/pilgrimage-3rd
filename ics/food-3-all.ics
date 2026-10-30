@@ -283,17 +283,19 @@ UID:d1-3-food-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261030T233000Z
 DTEND:20261031T010000Z
-SUMMARY:發車前往月稱光明寺｜4 項任務
+SUMMARY:發車前往月稱光明寺｜5 項任務
 DESCRIPTION:★【車】車長車上前行（提策朝禮、出坡、供養
- 的殊勝；快到月稱光明寺時誦密集嘛）\n★【餐】確認午
- 餐人數（分正常、量少）\n★【餐】聯絡金杏師姐（送餐
- 人數、時間、地點）\n【交】上車再點名，發車由車長回
- 報\n車長講稿：https://bmbill.github.io/pilgrimage-3rd/#r1\n\n隨身
- 流程：https://bmbill.github.io/pilgrimage-3rd/
+ 的殊勝；快到月稱光明寺時誦密集嘛）\n★【車】車長宣
+ 達：名牌務必隨身佩戴（法會入場證、所有活動識別證
+ ）\n★【餐】確認午餐人數（分正常、量少）\n★【餐】
+ 聯絡金杏師姐（送餐人數、時間、地點）\n【交】上車再
+ 點名，發車由車長回報\n車長講稿：https://bmbill.github.io/pi
+ lgrimage-3rd/#r1\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd
+ /
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:發車前往月稱光明寺｜4 項任務
+DESCRIPTION:發車前往月稱光明寺｜5 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
@@ -445,17 +447,18 @@ UID:d1-10-food-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T090000Z
 DTEND:20261031T093000Z
-SUMMARY:結行＆賦歸（車上用晚餐）｜5 項任務
+SUMMARY:結行＆賦歸（車上用晚餐）｜6 項任務
 DESCRIPTION:途經湖口休息站\n★【車】車長協助發便當與車
  上善後\n★【車】車長：湖口休息站處理掉便當盒\n★【
  車】車長布達：明早 6:50 集合、7:00 發車\n★【車】車長
- 布達：晚上可到里仁採購\n★【餐】按車次發送便當，車
- 上用晚餐\n車長講稿：https://bmbill.github.io/pilgrimage-3rd/#r2\n
- \n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+ 布達：明天憶師恩法會注意事項（見搭車講稿）\n★【車
+ 】車長布達：晚上可到里仁採購\n★【餐】按車次發送便
+ 當，車上用晚餐\n車長講稿：https://bmbill.github.io/pilgrimage-
+ 3rd/#r2\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:結行＆賦歸（車上用晚餐）｜5 項任務
+DESCRIPTION:結行＆賦歸（車上用晚餐）｜6 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
@@ -621,15 +624,16 @@ UID:d2-3-food-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T230000Z
 DTEND:20261031T235000Z
-SUMMARY:發車往林口體育館・車上前行｜2 項任務
+SUMMARY:發車往林口體育館・車上前行｜3 項任務
 DESCRIPTION:★【車】車長車上前行：唱傑仁波切、誦密集嘛
- \n【交】上車再點名，發車由車長回報\n車長講稿：https:/
- /bmbill.github.io/pilgrimage-3rd/#r3\n\n隨身流程：https://bmbill.gith
- ub.io/pilgrimage-3rd/
+ \n★【車】車長宣達：名牌務必隨身佩戴；憶師恩法會注
+ 意事項（見搭車講稿）\n【交】上車再點名，發車由車長
+ 回報\n車長講稿：https://bmbill.github.io/pilgrimage-3rd/#r3\n\n隨
+ 身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:發車往林口體育館・車上前行｜2 項任務
+DESCRIPTION:發車往林口體育館・車上前行｜3 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
@@ -1062,6 +1066,22 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:d4-1-car-1-food-3-all@yishien-3rd
+DTSTAMP:20261029T000000Z
+DTSTART:20261102T235000Z
+DTEND:20261103T000500Z
+SUMMARY:★【車】07:50 車長提醒綠療老師：用餐時間要到了
+DESCRIPTION:06:30–08:00 綠色療癒課程\n\n隨身流程：https://bmbi
+ ll.github.io/pilgrimage-3rd/
+URL:https://bmbill.github.io/pilgrimage-3rd/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:★【車】07:50 車長提醒綠療老師：用餐時間要到
+ 了
+TRIGGER:-PT20M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:d4-2-food-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261103T000000Z
@@ -1147,14 +1167,15 @@ UID:d4-8-food-3-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261103T110000Z
 DTEND:20261103T130000Z
-SUMMARY:感恩之夜｜3 項任務
-DESCRIPTION:★【餐】撤點心小站\n★【餐】確認明日用餐人
- 數\n【教】維那、配合法師上課\n\n隨身流程：https://bmbill
- .github.io/pilgrimage-3rd/
+SUMMARY:感恩之夜｜4 項任務
+DESCRIPTION:★【車】車長提醒：明早 9:45–10:00 生活班長在
+ 麻布山居櫃台收房卡、退房\n★【餐】撤點心小站\n★【
+ 餐】確認明日用餐人數\n【教】維那、配合法師上課\n\n
+ 隨身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:感恩之夜｜3 項任務
+DESCRIPTION:感恩之夜｜4 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
