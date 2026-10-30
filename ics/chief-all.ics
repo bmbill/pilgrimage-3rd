@@ -224,8 +224,8 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261030T223000Z
 DTEND:20261030T232000Z
 SUMMARY:飯店早餐｜★【餐】引導用餐
-DESCRIPTION:2F 福粵樓牡丹廳\n★【餐】引導用餐\n\n隨身流程
- ：https://bmbill.github.io/pilgrimage-3rd/
+DESCRIPTION:2F 福粵樓牡丹廳・用餐請報房號\n★【餐】引導
+ 用餐\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -550,9 +550,9 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261031T220000Z
 DTEND:20261031T225000Z
 SUMMARY:飯店早餐｜2 項任務
-DESCRIPTION:福粵樓牡丹廳・義工請穿白色襯衫\n★【餐】引
- 導用餐\n★【餐】回報大會用餐人數\n\n隨身流程：https://
- bmbill.github.io/pilgrimage-3rd/
+DESCRIPTION:福粵樓牡丹廳・用餐請報房號・義工請穿白色襯
+ 衫\n★【餐】引導用餐\n★【餐】回報大會用餐人數\n\n隨
+ 身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -779,8 +779,8 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261101T223000Z
 DTEND:20261101T233000Z
 SUMMARY:飯店早餐＆整理行李｜★【餐】引導用餐
-DESCRIPTION:★【餐】引導用餐\n\n隨身流程：https://bmbill.githu
- b.io/pilgrimage-3rd/
+DESCRIPTION:福粵樓牡丹廳・用餐請報房號\n★【餐】引導用
+ 餐\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
