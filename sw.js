@@ -1,8 +1,9 @@
 /* 離線快取：網頁先走網路（拿最新版），沒網路才用快取；行事曆檔一律走網路 */
-const C = 'pg-20261030212614';
+const C = 'pg-20261030214948';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
+const IMGS = ['./img/chupo.jpg', './img/fusen-a.jpg', './img/fusen-b.jpg', './img/m31-1102.jpg', './img/m31-1103.jpg'];
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(C).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(C).then(c => c.addAll(CORE).then(() => c.addAll(IMGS).catch(() => {}))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys()
