@@ -312,7 +312,7 @@ tr.fd p{margin:6px 0}
 <main>
   <div class="wrap">
     <div class="groups" id="groups" aria-label="依組別篩選"></div>
-    <section class="view" id="v-flow"></section>
+    <section class="view" id="v-flow"><p id="boot" style="padding:48px 8px;text-align:center;color:var(--muted)">載入中…<br><small>如果一直停在這裡，請截圖給管理者</small></p></section>
     <section class="view" id="v-rides" hidden></section>
     <section class="view" id="v-free" hidden></section>
     <section class="view" id="v-info" hidden></section>
@@ -338,6 +338,8 @@ tr.fd p{margin:6px 0}
 </nav>
 
 <script>
+/* 診斷：程式出錯時直接顯示在畫面上（iPhone 桌面版看不到主控台） */
+if(typeof window!=='undefined')(function(){function show(m){try{var d=document.getElementById('errbox');if(!d){d=document.createElement('pre');d.id='errbox';d.style.cssText='position:fixed;left:8px;right:8px;top:8px;z-index:9999;background:#fff;color:#b00020;border:2px solid #b00020;border-radius:8px;padding:8px;font-size:12px;white-space:pre-wrap;max-height:50vh;overflow:auto';(document.body||document.documentElement).appendChild(d)}d.textContent+=m+String.fromCharCode(10)}catch(_){}}window.addEventListener('error',function(e){show('錯誤：'+e.message+'（第 '+(e.lineno||'?')+' 行）')});window.addEventListener('unhandledrejection',function(e){show('錯誤：'+(e.reason&&e.reason.message||e.reason))})})();
 const BUS='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 18v3M16 18v3"/><circle cx="8" cy="14.5" r="1"/><circle cx="16" cy="14.5" r="1"/></svg>';
 const G={car:{name:'車長',full:'車長',cls:'t-car',short:'車'},edu:{name:'教育組',full:'教育組',cls:'t-edu',short:'教'},food:{name:'餐飲組',full:'餐飲組',cls:'t-food',short:'餐'},tra:{name:'交通組',full:'交通組',cls:'t-tra',short:'交'},adm:{name:'行政組',full:'行政組',cls:'t-adm',short:'行'}};
 const GK=['car','edu','food','tra','adm'];
@@ -857,7 +859,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 21:22（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 21:26（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
