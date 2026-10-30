@@ -1,5 +1,5 @@
 /* 離線快取：網頁先走網路（拿最新版），沒網路才用快取；行事曆檔一律走網路 */
-const C = 'pg-20261030211339';
+const C = 'pg-20261030211752';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(C).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
