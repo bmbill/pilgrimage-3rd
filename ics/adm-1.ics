@@ -167,15 +167,15 @@ UID:d1-4-adm-1-adm-1@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T012000Z
 DTEND:20261031T013500Z
-SUMMARY:【行】09:20 港、馬學員將錢交給行政組，統一兌換
- 百元鈔（張數見下方）
+SUMMARY:【行】09:20 向港、馬學員收錢，統一兌換百元鈔（
+ 張數見下方）
 DESCRIPTION:09:30–10:45 月稱光明寺建寺緣起\n\n隨身流程：htt
  ps://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:【行】09:20 港、馬學員將錢交給行政組，統一兌
- 換百元鈔（張數見下方）
+DESCRIPTION:【行】09:20 向港、馬學員收錢，統一兌換百元鈔
+ （張數見下方）
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
