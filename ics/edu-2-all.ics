@@ -452,11 +452,12 @@ DTEND:20261031T093000Z
 SUMMARY:結行＆賦歸（車上用晚餐）｜6 項任務
 DESCRIPTION:途經湖口休息站\n★【車】車長協助發便當與車
  上善後\n★【車】車長：湖口休息站處理掉便當盒\n★【
- 車】車長布達：明早 6:50 集合、7:00 發車\n★【車】車長
- 布達：明天憶師恩法會注意事項（見搭車講稿）\n★【車
- 】車長布達：晚上可到里仁採購\n【餐】按車次發送便當
- ，車上用晚餐\n車長講稿：https://bmbill.github.io/pilgrimage-3rd
- /#r2\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+ 車】車長布達：明早 6:50 集合（1–3 車騎樓、4–6 車 Lobb
+ y）、7:00 發車\n★【車】車長布達：明天憶師恩法會注意
+ 事項（見搭車講稿）\n★【車】車長布達：晚上可到里仁
+ 採購\n【餐】按車次發送便當，車上用晚餐\n車長講稿：h
+ ttps://bmbill.github.io/pilgrimage-3rd/#r2\n\n隨身流程：https://bmbil
+ l.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -547,7 +548,7 @@ BEGIN:VEVENT
 UID:d2-1-edu-2-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T220000Z
-DTEND:20261031T225000Z
+DTEND:20261031T224500Z
 SUMMARY:飯店早餐｜2 項任務
 DESCRIPTION:福粵樓牡丹廳・用餐請報房號・義工請穿白色襯
  衫\n【餐】引導用餐\n【餐】回報大會用餐人數\n\n隨身流
@@ -565,7 +566,7 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261031T224000Z
 DTEND:20261031T225500Z
 SUMMARY:★【車】06:40 車長就定位，開對講機舉牌引導上車
-DESCRIPTION:06:00–06:50 飯店早餐\n\n隨身流程：https://bmbill.git
+DESCRIPTION:06:00–06:45 飯店早餐\n\n隨身流程：https://bmbill.git
  hub.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
@@ -581,7 +582,7 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261031T224000Z
 DTEND:20261031T225500Z
 SUMMARY:【交】06:40 車長集合
-DESCRIPTION:06:00–06:50 飯店早餐\n\n隨身流程：https://bmbill.git
+DESCRIPTION:06:00–06:45 飯店早餐\n\n隨身流程：https://bmbill.git
  hub.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
@@ -595,14 +596,16 @@ UID:d2-2-edu-2-all@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T225000Z
 DTEND:20261031T232000Z
-SUMMARY:大廳集合｜3 項任務
-DESCRIPTION:【餐】請福容櫃台協助接晚餐（飯糰＋湯）\n【
- 交】學員 6:50 大廳集合\n【交】遊覽車 6:55 到飯店\n\n隨
- 身流程：https://bmbill.github.io/pilgrimage-3rd/
+SUMMARY:依車次集合｜3 項任務
+DESCRIPTION:第 1–3 車：飯店外騎樓・第 4–6 車：飯店 Lobby
+ ・請務必準時\n【餐】請福容櫃台協助接晚餐（飯糰＋湯
+ ）\n【交】學員 6:50 依車次集合（1–3 車騎樓、4–6 車 Lo
+ bby）\n【交】遊覽車 6:50 到飯店\n\n隨身流程：https://bmbill
+ .github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:大廳集合｜3 項任務
+DESCRIPTION:依車次集合｜3 項任務
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT

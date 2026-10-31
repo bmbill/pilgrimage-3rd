@@ -234,10 +234,11 @@ DTEND:20261031T093000Z
 SUMMARY:結行＆賦歸（車上用晚餐）｜5 項任務
 DESCRIPTION:途經湖口休息站\n【車】車長協助發便當與車上
  善後\n【車】車長：湖口休息站處理掉便當盒\n【車】車
- 長布達：明早 6:50 集合、7:00 發車\n【車】車長布達：明
- 天憶師恩法會注意事項（見搭車講稿）\n【車】車長布達
- ：晚上可到里仁採購\n車長講稿：https://bmbill.github.io/pilgr
- image-3rd/#r2\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+ 長布達：明早 6:50 集合（1–3 車騎樓、4–6 車 Lobby）、7:
+ 00 發車\n【車】車長布達：明天憶師恩法會注意事項（見
+ 搭車講稿）\n【車】車長布達：晚上可到里仁採購\n車長
+ 講稿：https://bmbill.github.io/pilgrimage-3rd/#r2\n\n隨身流程：htt
+ ps://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -298,7 +299,7 @@ DTSTAMP:20261029T000000Z
 DTSTART:20261031T224000Z
 DTEND:20261031T225500Z
 SUMMARY:【車】06:40 車長就定位，開對講機舉牌引導上車
-DESCRIPTION:06:00–06:50 飯店早餐\n\n隨身流程：https://bmbill.git
+DESCRIPTION:06:00–06:45 飯店早餐\n\n隨身流程：https://bmbill.git
  hub.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM

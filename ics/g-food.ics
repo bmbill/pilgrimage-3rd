@@ -259,7 +259,7 @@ BEGIN:VEVENT
 UID:d2-1-g-food@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T220000Z
-DTEND:20261031T225000Z
+DTEND:20261031T224500Z
 SUMMARY:飯店早餐｜2 項任務
 DESCRIPTION:福粵樓牡丹廳・用餐請報房號・義工請穿白色襯
  衫\n【餐】引導用餐\n【餐】回報大會用餐人數\n\n隨身流
@@ -276,15 +276,16 @@ UID:d2-2-g-food@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261031T225000Z
 DTEND:20261031T232000Z
-SUMMARY:大廳集合｜【餐】請福容櫃台協助接晚餐（飯糰＋
- 湯）
-DESCRIPTION:【餐】請福容櫃台協助接晚餐（飯糰＋湯）\n\n
- 隨身流程：https://bmbill.github.io/pilgrimage-3rd/
+SUMMARY:依車次集合｜【餐】請福容櫃台協助接晚餐（飯糰
+ ＋湯）
+DESCRIPTION:第 1–3 車：飯店外騎樓・第 4–6 車：飯店 Lobby
+ ・請務必準時\n【餐】請福容櫃台協助接晚餐（飯糰＋湯
+ ）\n\n隨身流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:大廳集合｜【餐】請福容櫃台協助接晚餐（飯糰
- ＋湯）
+DESCRIPTION:依車次集合｜【餐】請福容櫃台協助接晚餐（飯
+ 糰＋湯）
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
