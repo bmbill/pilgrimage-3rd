@@ -645,7 +645,11 @@ const LINEMSG={
  d1:`【11/1（日）明日提醒｜憶師恩法會】
 ⏰ 05:30 起床
 🍚 06:00–06:50 早餐（福粵樓牡丹廳，請報房號）
-🚌 06:50 大廳集合，07:00 發車前往林口體育館
+🚌 06:50 大廳集合後，請依車次上車：
+　第 1–3 車（S1、A1、S2、S3、S4、S5）
+　第 4–6 車（S6、S7、M1、M2、H1、H2）
+　遊覽車 06:55 到，07:00 發車前往林口體育館
+📛 名牌請務必隨身佩戴（法會入場證）
 🎒 水杯、薄外套、筆記本；法會全天，手機請調靜音
 🍙 晚餐：回飯店 1F 大廳依生活班領飯糰＋湯
 🛍 18:30–19:00 文創品交貨（1F Lobby），有訂購的請記得帶錢
@@ -653,8 +657,13 @@ const LINEMSG={
  d2:`【11/2（一）明日提醒｜移往麻布山林】
 ⏰ 06:00 起床；06:30–07:30 早餐（請報房號），請先整理好行李
 🔑 07:15–07:30 生活班長到櫃台還房卡（請把房卡交給生活班長）
-🧳 行李拉到 1 樓大廳集合：第 1–3 車 07:20–07:30；第 4–6 車 07:30–07:40
-🚌 分批發車：07:40 第 1–2 車｜07:50 第 3–4 車｜08:00 第 5–6 車
+🧳 行李拉到 1 樓大廳集合：
+　07:20–07:30　第 1–3 車（S1、A1、S2、S3、S4、S5）
+　07:30–07:40　第 4–6 車（S6、S7、M1、M2、H1、H2）
+🚌 分批發車：
+　07:40　第 1–2 車（S1、A1、S2、S3）
+　07:50　第 3–4 車（S4、S5、S6、S7）
+　08:00　第 5–6 車（M1、M2、H1、H2）
 🎒 準備一個隨身背包：杯子、筆記本、筆、雨傘、薄外套、防蚊液（到麻布寄放行李後直接上課）
 📌 群組已公布：麻布房號、詠山館 M31 座位圖、富森用餐座位圖
 晚安，明天見 🙏`,
@@ -859,7 +868,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/30 21:49（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：10/31 15:23（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
