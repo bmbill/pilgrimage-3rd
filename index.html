@@ -599,7 +599,7 @@ const CARSET={
   {n:1,total:35,stu:33,vol:'麥春梅、宋嬌娥（車長）',rows:[['S1',13,'生活班長 陈昌芬・副生活班長 梁佩金'],['S2',20,'生活班長 王秀颜・副生活班長 陈清兰']],lead:'副團長 陈宗燕'},
   {n:2,total:34,stu:32,vol:'黃杏娥、蔡淑婉（車長）',rows:[['S3',16,'生活班長 苏淑玲・副生活班長 卓秀耹'],['S4',16,'生活班長 黄碧霞・副生活班長 何国鸿']]},
   {n:3,total:32,stu:30,vol:'劉瓊鈴、張燕珍（車長）',rows:[['S6',6,'本車無 S6 幹部，請車長確認'],['S7',10,'生活班長 欧阳佩盈・副生活班長 徐爱玲'],['H1',7,'副生活班長 鄭志芳'],['H2',7,'本車無 H2 幹部，請車長確認；含 11/3 加入 葉鳳儀（李清華改第 6 車）']],lead:'團長 吳淑賢'},
-  {n:4,total:35,stu:33,vol:'夏安、連淑鈴（車長）',rows:[['S5',20,'生活班長 鲍丽娟・副生活班長 王美源（行李最後放）'],['A1',2,'北加 史堅、程好（行李最後放）'],['M2',6,'副生活班長 胡美素；含 苏英萍（由第 3 車改來，行李先放）'],['M1',5,'本車無 M1 幹部，請車長確認（行李先放）']],lead:'副團長 林惠婷'},
+  {n:4,total:35,stu:33,vol:'夏安、連淑鈴（車長）',rows:[['S5',20,'生活班長 鲍丽娟・副生活班長 王美源（行李最後放）'],['A1',2,'北加 史堅、程好（行李最後放）'],['M2',6,'副生活班長 胡美素；含 苏英萍（由第 3 車改來）'],['M1',5,'本車無 M1 幹部，請車長確認（行李先放）']],lead:'副團長 林惠婷'},
   {n:5,total:34,stu:32,vol:'謝承芳、杜王平福（車長）',rows:[['A1',11,'生活班長 呂怡儀・副生活班長 鄭祖安、陳麗鄉；林立育改去兄弟飯店'],['M1',4,'副生活班長 唐丽梅'],['M2',6,'生活班長 李惠金'],['S1',2,'林专陆、李春景'],['S6',3,'吳慧君、吳丽君（兄弟飯店）；王伟泉（機場快線）'],['S7',6,'含搭機場快線 4 位']],lead:'團長 林专陆、吴华福；機場快線 5 位行李放藥師殿右 21 號前'},
   {n:6,total:33,stu:30,vol:'宋函倚、羅文傳（車長）、楊智斌',rows:[['S6',9,'生活班長 陳娶娣・副生活班長 王春兰'],['M1',6,'生活班長 李莲英'],['H1',6,'生活班長 廖潔雲'],['H2',4,'生活班長 黃少碧・副生活班長 李兼美；含 李清華（自訂交通到一心寺）'],['S7',2,'王思中、林素华'],['M2',2,'刘馨忆、陈金娇'],['A1',1,'南加 張冬英']],lead:'副團長 符巧敏；全車回程不搭，行李放藥師殿右 21 號前'}],
  back:[
@@ -869,7 +869,7 @@ function renderInfo(){
   h+=`<section class="isec" id="i-place"><h3>地點與交通</h3>${PLACES.map(p=>`<article class="place"><header><b>${p.n}</b><span>${p.when}</span></header>${p.addr?`<div>${p.addr}</div>`:''}${p.tel?`<div>電話：<span class="sel">${p.tel}</span></div>`:''}<div class="hint">${p.park}</div><div class="plinks"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.q)}" target="_blank" rel="noopener">Google 地圖</a><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('急診 '+p.q)}" target="_blank" rel="noopener">附近急診</a></div></article>`).join('')}<p class="hint">個人手機號碼不放在這裡，請用義工 LINE 群組聯絡。</p></section>`;
   // 緊急
   h+=`<section class="isec" id="i-sos"><h3>緊急狀況處理</h3><div class="sos119">緊急醫療・火警：<b class="sel">119</b>　報案：<b class="sel">110</b></div><dl class="sos">${EMERG.map(e=>`<dt>${e[0]}</dt><dd>${e[1]}</dd>`).join('')}</dl></section>`;
-  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：11/03 19:39（看到的時間不是最新的，請關掉重開）</p>`;
+  h+=`<p class="hint" style="margin-top:28px;text-align:center">網頁版本：11/03 19:42（看到的時間不是最新的，請關掉重開）</p>`;
   document.getElementById('v-info').innerHTML=h;
 }
 
