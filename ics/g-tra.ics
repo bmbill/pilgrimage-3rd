@@ -467,13 +467,13 @@ UID:d5-9-g-tra@yishien-3rd
 DTSTAMP:20261029T000000Z
 DTSTART:20261104T070000Z
 DTEND:20261104T073000Z
-SUMMARY:賦歸｜【交】關顧搭機場快線 6 位到新竹高鐵
-DESCRIPTION:【交】關顧搭機場快線 6 位到新竹高鐵\n\n隨身
+SUMMARY:賦歸｜【交】關顧搭機場快線 5 位到新竹高鐵
+DESCRIPTION:【交】關顧搭機場快線 5 位到新竹高鐵\n\n隨身
  流程：https://bmbill.github.io/pilgrimage-3rd/
 URL:https://bmbill.github.io/pilgrimage-3rd/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:賦歸｜【交】關顧搭機場快線 6 位到新竹高鐵
+DESCRIPTION:賦歸｜【交】關顧搭機場快線 5 位到新竹高鐵
 TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
